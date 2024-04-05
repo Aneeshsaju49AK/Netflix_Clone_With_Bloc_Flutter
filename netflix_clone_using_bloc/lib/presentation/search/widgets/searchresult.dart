@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_using_bloc/core/colors/constant.dart';
-import 'package:netflix_clone_using_bloc/presentation/search/widgets/title.dart';
+import 'package:netflix_clone_using_bloc/presentation/search/widgets/maincard.dart';
+import 'package:netflix_clone_using_bloc/presentation/widgets/title.dart';
 
 class SearchResultWidget extends StatelessWidget {
   const SearchResultWidget({super.key});
@@ -29,24 +30,6 @@ class SearchResultWidget extends StatelessWidget {
             ),
           )
         ],
-      ),
-    );
-  }
-}
-
-class MainCard extends StatelessWidget {
-  const MainCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        image: DecorationImage(
-          image: NetworkImage(
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyWVFRzRMy8J0MPpcaJkBKiGrUWUVBY9lj-3xzSAm_30uqjWuchMUuruZavJ4CkNJtHE&usqp=CAU"),
-          fit: BoxFit.fill,
-        ),
       ),
     );
   }
