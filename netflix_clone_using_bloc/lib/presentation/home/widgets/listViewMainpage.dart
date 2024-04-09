@@ -19,7 +19,7 @@ class ListviewMainpage extends StatelessWidget {
         height: size.height * 0.3,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(
+          image: const DecorationImage(
             image: NetworkImage(
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanbKl0mH4nwUsqCUVTEPt3VYtCE7uXSFXhXxo4Eqssg&s"),
             fit: BoxFit.cover,

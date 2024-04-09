@@ -12,13 +12,13 @@ class AppbarCommonwidget extends StatelessWidget {
         KWidth,
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w900,
           ),
         ),
-        Spacer(),
-        Icon(
+        const Spacer(),
+        const Icon(
           Icons.cast,
           color: Colors.white,
           size: 30,

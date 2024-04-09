@@ -6,7 +6,7 @@ class IconButtonWidget extends StatelessWidget {
   final IconData icon;
   final double? iconSize;
   final double? fontSize;
-  IconButtonWidget({
+  const IconButtonWidget({
     required this.icon,
     required this.title,
     this.fontSize,

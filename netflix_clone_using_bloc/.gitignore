@@ -42,3 +42,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+#ingore add for api
+lib/infrastructure/api_Key.dart

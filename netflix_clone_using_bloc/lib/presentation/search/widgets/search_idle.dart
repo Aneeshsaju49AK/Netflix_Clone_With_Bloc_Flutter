@@ -12,11 +12,11 @@ class SearchIdleWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SearchHead(title: "Top Searches"),
+        const SearchHead(title: "Top Searches"),
         KHeight20,
         Expanded(
           child: ListView.separated(
-            itemBuilder: (context, index) => TopSearchItemTile(),
+            itemBuilder: (context, index) => const TopSearchItemTile(),
             separatorBuilder: (context, index) => KHeight,
             itemCount: 10,
           ),

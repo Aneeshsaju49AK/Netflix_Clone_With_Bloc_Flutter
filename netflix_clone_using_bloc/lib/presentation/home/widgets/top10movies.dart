@@ -1,5 +1,4 @@
 import 'package:bordered_text/bordered_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Top10MoviesWidget extends StatelessWidget {
@@ -22,7 +21,7 @@ class Top10MoviesWidget extends StatelessWidget {
               height: size.height * 0.3,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: NetworkImage(
                       "https://w0.peakpx.com/wallpaper/79/816/HD-wallpaper-sita-ramam-hollywood-movies-gallery-stills-clips.jpg"),
                   fit: BoxFit.cover,
@@ -39,7 +38,7 @@ class Top10MoviesWidget extends StatelessWidget {
             strokeColor: Colors.grey,
             child: Text(
               "${index + 1}",
-              style: TextStyle(
+              style: const TextStyle(
                 decoration: TextDecoration.none,
                 fontSize: 120,
                 fontWeight: FontWeight.w700,

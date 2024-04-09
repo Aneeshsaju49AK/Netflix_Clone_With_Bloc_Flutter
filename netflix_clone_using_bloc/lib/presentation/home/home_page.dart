@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:netflix_clone_using_bloc/core/colors/colors.dart';
 import 'package:netflix_clone_using_bloc/core/colors/constant.dart';
-import 'package:netflix_clone_using_bloc/presentation/home/widgets/listViewMainpage.dart';
 import 'package:netflix_clone_using_bloc/presentation/widgets/common_textbutton.dart';
 import 'package:netflix_clone_using_bloc/presentation/widgets/mainListRefactor.dart';
-import 'package:netflix_clone_using_bloc/presentation/home/widgets/top10movies.dart';
-import 'package:netflix_clone_using_bloc/presentation/widgets/title.dart';
 import 'package:netflix_clone_using_bloc/presentation/widgets/top10MoviesRefactor.dart';
 
 ValueNotifier<bool> scrollNotifier = ValueNotifier(true);
@@ -41,7 +38,7 @@ class ScreenHome extends StatelessWidget {
                         Container(
                           height: size.height * 0.7,
                           width: size.width / 1,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               fit: BoxFit.fill,
                               image: NetworkImage(
@@ -55,7 +52,7 @@ class ScreenHome extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.black.withOpacity(0.4)),
                         ),
-                        Positioned(
+                        const Positioned(
                           bottom: 30,
                           left: 0,
                           right: 0,
@@ -93,7 +90,7 @@ class ScreenHome extends StatelessWidget {
                 ),
                 scrollNotifier.value == true
                     ? AnimatedContainer(
-                        duration: Duration(
+                        duration: const Duration(
                           milliseconds: 1000,
                         ),
                         height: size.height * 0.16,
@@ -108,8 +105,8 @@ class ScreenHome extends StatelessWidget {
                                   width: 70,
                                   height: 70,
                                 ),
-                                Spacer(),
-                                Icon(
+                                const Spacer(),
+                                const Icon(
                                   Icons.cast,
                                   color: Colors.white,
                                   size: 30,
@@ -123,7 +120,7 @@ class ScreenHome extends StatelessWidget {
                                 KWidth,
                               ],
                             ),
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 TextButtonWidget(title: "TV Shows"),
@@ -157,7 +154,7 @@ class TextButtonWidget extends StatelessWidget {
       onPressed: () {},
       child: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w400,
         ),
@@ -177,12 +174,12 @@ class StackbuttonMain extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton.icon(
       onPressed: () {},
-      style: ButtonStyle(
+      style: const ButtonStyle(
         backgroundColor: MaterialStatePropertyAll(
           KWhiteColor,
         ),
       ),
-      icon: Icon(Icons.play_arrow),
+      icon: const Icon(Icons.play_arrow),
       label: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 10,

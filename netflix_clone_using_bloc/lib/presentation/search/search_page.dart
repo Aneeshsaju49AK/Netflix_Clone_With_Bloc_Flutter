@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_using_bloc/core/colors/colors.dart';
 import 'package:netflix_clone_using_bloc/core/colors/constant.dart';
-import 'package:netflix_clone_using_bloc/presentation/search/widgets/search_idle.dart';
 import 'package:netflix_clone_using_bloc/presentation/search/widgets/searchresult.dart';
 
 class ScreenSearch extends StatelessWidget {
@@ -19,19 +18,19 @@ class ScreenSearch extends StatelessWidget {
             children: [
               CupertinoSearchTextField(
                 backgroundColor: KGreyColor.withOpacity(0.4),
-                prefixIcon: Icon(
+                prefixIcon: const Icon(
                   CupertinoIcons.search,
                   color: KGreyColor,
                 ),
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                   CupertinoIcons.xmark_circle_fill,
                   color: KButtonColorWhite,
                 ),
-                style: TextStyle(color: KWhiteColor),
+                style: const TextStyle(color: KWhiteColor),
               ),
               KHeight,
               // Expanded(child: SearchIdleWidget()),
-              Expanded(
+              const Expanded(
                 child: SearchResultWidget(),
               ),
             ],

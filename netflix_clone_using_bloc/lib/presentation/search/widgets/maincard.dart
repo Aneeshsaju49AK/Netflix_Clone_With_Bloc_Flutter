@@ -8,7 +8,7 @@ class MainCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        image: DecorationImage(
+        image: const DecorationImage(
           image: NetworkImage(
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyWVFRzRMy8J0MPpcaJkBKiGrUWUVBY9lj-3xzSAm_30uqjWuchMUuruZavJ4CkNJtHE&usqp=CAU"),
           fit: BoxFit.fill,

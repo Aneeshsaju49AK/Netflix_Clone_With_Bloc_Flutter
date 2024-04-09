@@ -11,11 +11,11 @@ class ScreenMainPage extends StatelessWidget {
   ScreenMainPage({super.key});
 
   final _pages = [
-    ScreenHome(),
-    ScreenNewAndHot(),
-    ScreenFastAndLaughs(),
-    ScreenSearch(),
-    ScreenDownloads(),
+    const ScreenHome(),
+    const ScreenNewAndHot(),
+    const ScreenFastAndLaughs(),
+    const ScreenSearch(),
+    const ScreenDownloads(),
   ];
 
   @override
@@ -30,7 +30,7 @@ class ScreenMainPage extends StatelessWidget {
           },
         ),
       ),
-      bottomNavigationBar: BottomNavigationWidget(),
+      bottomNavigationBar: const BottomNavigationWidget(),
     );
   }
 }

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_using_bloc/core/colors/colors.dart';
 import 'package:netflix_clone_using_bloc/core/colors/constant.dart';
@@ -30,12 +29,12 @@ class VideoListItem extends StatelessWidget {
                   backgroundColor: Colors.black.withOpacity(0.5),
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.volume_off,
                     ),
                   ),
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     CircleAvatar(
@@ -92,7 +91,7 @@ class VideoAction extends StatelessWidget {
           icon,
           color: KButtonColorWhite,
         ),
-        Text("data"),
+        const Text("data"),
       ],
     );
   }

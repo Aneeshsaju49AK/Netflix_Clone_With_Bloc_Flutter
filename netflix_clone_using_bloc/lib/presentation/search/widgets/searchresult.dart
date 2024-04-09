@@ -13,7 +13,7 @@ class SearchResultWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SearchHead(title: "Movies & TV"),
+          const SearchHead(title: "Movies & TV"),
           KHeight,
           Expanded(
             child: GridView.count(
@@ -24,7 +24,7 @@ class SearchResultWidget extends StatelessWidget {
               children: List.generate(
                 20,
                 (index) {
-                  return MainCard();
+                  return const MainCard();
                 },
               ),
             ),
